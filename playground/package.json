@@ -1,7 +1,13 @@
 {
   "private": true,
   "name": "my-module-playground",
+  "scripts": {
+    "story:dev": "histoire dev"
+  },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^5.3.3"
+    "@histoire/plugin-nuxt": "^0.10.7",
+    "@histoire/plugin-vue": "^0.10.7",
+    "@nuxtjs/tailwindcss": "^5.3.3",
+    "histoire": "^0.10.7"
   }
 }
