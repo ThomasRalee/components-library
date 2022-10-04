@@ -7,15 +7,10 @@ export default defineNuxtModule({
     configKey: 'appComponents'
   },
   hooks: {
-    'components:dirs'(dirs) {
+    'components:dirs' (dirs) {
       dirs.push({
         path: fileURLToPath(new URL('./../assets/components', import.meta.url)),
         prefix: 'app'
-      })
-
-      dirs.push({
-        path: fileURLToPath(new URL('./../assets/icons', import.meta.url)),
-        prefix: 'appIcon'
       })
     }
   }
