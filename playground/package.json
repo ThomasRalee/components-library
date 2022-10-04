@@ -2,7 +2,8 @@
   "private": true,
   "name": "my-module-playground",
   "scripts": {
-    "story:dev": "histoire dev"
+    "generate:iconFile": "node generate.cjs",
+    "story:dev": "yarn generate:iconFile && histoire dev"
   },
   "devDependencies": {
     "@histoire/plugin-nuxt": "^0.10.7",
